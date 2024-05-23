@@ -13,7 +13,7 @@ const app = express()
 require("dotenv").config()
 // Middleware to enable CORS
 app.use(cors(
-    { origin: "*", credentials: true, }, //server accepts requests from static site
+    //{ origin: "*", credentials: true, }, //server accepts requests from static site
     { origin: ["http://localhost:3000", "https://bdev-saitama.netlify.app"], credentials: true, } //server accepts requests from static site
 ))
 app.use(express.json())//body parsing middleware for body
