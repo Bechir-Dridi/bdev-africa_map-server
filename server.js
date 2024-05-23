@@ -34,7 +34,7 @@ app.use("/api/images", imagesRoutes)
 // const conn = mysql.createConnection({
 //     host: 'localhost',
 //     user: 'bechir',
-//     password: 'test_123',
+//     password: '',
 //     database: 'countries_db'
 // });
 
