@@ -14,7 +14,7 @@ require("dotenv").config()
 // Middleware to enable CORS
 app.use(cors(
     //{ origin: "*", credentials: true, }, //server accepts requests from static site
-    { origin: ["https://bdev-africamap.app"], credentials: true, } //server accepts requests from static site
+    { origin: ["https://bdev-africamap.app", "https://bdev-africamap.vercel.app"], credentials: true, } //server accepts requests from static site
 ))
 app.use(express.json())//body parsing middleware for body
 app.use(express.urlencoded({ extended: true }));//body parsing middleware for formUrlEncoded
